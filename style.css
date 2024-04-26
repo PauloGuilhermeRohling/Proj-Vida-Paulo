@@ -1,102 +1,105 @@
-        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&#39;');
 
- :root {
-    --cor-de-fundo: #e7c711;
-    --vermelho: #ff0000;
-    --azul: #2791A9;
-    --botao-ativo:#ff6600;
-    --botao-inativo:#ffd000;
-    --texto-fundo:#000000;
+:root{
+--cor-de-fundo: #1E1E1E;
+--verde: #f0efef;
+--branco: #ffffff;
+--botao-ativo: #252431;
+--botao-inativo: #464558;
+--texto-fundo: #08080e;
 }
 
 body{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family:"Chakra Pecth", sans-serif;
-    }
+background-color: var(--cor-de-fundo);
+color: var(--branco);
+font-family: "chakra Petch", sans-serif;
+}
 
-    .titulo-principal span {
-        color: var(--botao-inativo);
-    }
+.conteudo-principal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 1240px;
+width: 100%;
+margin: 0;
+}
 
-    .titulo-principal{
-        text-align: left;
-        width: 100%;
-        font-size: 32px;
-    }
+.titulo-principal{
+text-align: left;
+width: 100%;
+font-size: 32px;
+}
 
-    .conteudo-principal{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 1240px;
-        width: 100%;
-        margin: 0;     
-    }
+.titulo-principal span{
+color:darkorchid;
+}
 
-    .botao{
-        font-family:"chakra petch",sans-serif;
-        background-color: var(--botao-inativo);
-        color: var(--branco);
-        display: flex;
-        justify-content: center;
-        padding: 1em;
-        font-size: 18px;
-        align-items: center;
-        width: 100%;
-        border-bottom: 4px solid var(--botao-ativo);
-        border-left: 2px solid var(--botao-ativo);
-        border-right: 2px solid var(--botao-ativo);
-        border-top: none;
-    }
+.botao{
+font-family: "Chakra Petch", sans-serif;
+background-color: var(--botao-inativo);
+color: var(--branco);
+display: flex;
+justify-content: center;
+padding: 1em;
+font-size: 18px;
+align-items: center;
+width: 100%;
+border-bottom: 4px solid var(--botao-ativo);
+border-left: 2px solid var(--botao-ativo);
+border-right: 2px solid var(--botao-ativo);
+border-top: none;
+}
 
-    .botao:first-child{
-        border-radius: 40px 40px 0 0;
-    }
+.botoes{
+display: block;
+}
 
-    .botoes{
-        display: block;
-    }
+.botao:first-child{
+border-radius: 40px 40px 0 0;
+}
 
-    .ativo{
-        background-color: var(--botao-ativo);
-        border-bottom: var(--verde);
-    }
+.botao.ativo{
+background-color: var(--botao-ativo);
+border-bottom: 4px solid var(--verde);
+}
 
+.abas-textos{
+background-color: var(--texto-fundo);
+padding: 40px;
+border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+display:block;
+}
 
-    .abas-textos{
-        background-color: var(--texto-fundo);
-        padding: 40px;
-        border-radius: 0 0 40px 40px;
-    }
-    .aba-conteudo.ativo{
-        display:block;
-    }
-    
-    .aba-conteudo{
-        display: none;
-    }
-    
-    .aba-conteudo-titulo-principal{
-        font-size: 28px;
-        text-align: center;
-    }
-    .aba-conteudo-titulo-secundario{
-        text-align: center;
-        color: var(--verde);
-        text-transform: uppercase;
-    }
+.aba-conteudo{
+display: none;
+}
 
-@media screen and (min-width: 768px) {
-    .botoes{
-        display: flex;
-    }
-    .botao:first-child{
-        border-radius: 40px 0 0 0;
-    }
-    
-    .botao:last-child{
-        border-radius: 0 40px 0 0;
-    }
+.aba-conteudo-titulo-principal{
+font-size: 28px;
+text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+text-align: center;
+color: var(--verde);
+text-transform: uppercase;
+}
+ 
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+.botoes{
+display: flex;
+}
+.botao:first-child{
+border-radius: 40px 0 0 0;
+}
+.botao:last-child{
+border-radius: 0 40px 0 0;
+}
 }
